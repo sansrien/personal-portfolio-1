@@ -11,6 +11,9 @@ body{
     align-items: center;
     height: 100vh;
 }
+img{
+    max-width: 100%;
+}
 #welcome-section{
     background-image: url("imgs/bg1.jpg");
     background-position-y: 10%;
@@ -41,4 +44,19 @@ body{
         font-size: 1.1em;
         color:#983443;
     }
-
+h2{
+    font-size: 3em;
+}
+#about-me{
+    background-color:#602931;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+}
+    #about-pic{
+        width: 20%;
+        margin: 5%;
+    }
+    #about-text{
+        width: 50%;
+    }
