@@ -1,6 +1,9 @@
 body{
   background-color: rgb(18, 13, 59);
   color: white;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 .wrapper {
     height: 100vh;
