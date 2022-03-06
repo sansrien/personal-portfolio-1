@@ -118,6 +118,7 @@ img{
     h3 span{
         font-weight: 600;
         font-size: 1.1em;
+        color:rgb(207, 160, 102);
         color:#983443;
     }
 h2{
@@ -142,6 +143,7 @@ h2{
     }
     #about-me h2{
         margin-bottom: 50px;
+        color: rgb(250, 200, 139);
     }
     #about-pic{
         width: 20%;
@@ -179,8 +181,14 @@ h2{
         max-width:120px;
         margin: 2vw;
     }
+    .skill-logo{
+        filter: sepia(100);
+    }
     .skill-card:hover{
         max-width:130px;
+    }
+    .skill-logo:hover{
+        filter: none;
     }
 
 #projects{
@@ -208,8 +216,54 @@ h2{
         margin-right: 40px;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
+    .project-pic{
+        min-width:370px;
+        min-height:208px;
+        margin-right: 40px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    }
+    .project-pic:hover{
+        min-width: 450px;
+        min-height:253px;
+    }
+    #holdlots{
+        background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/holdlots.PNG");
+        background-size: cover;
+    }
+    #holdlots:hover{
+        background:url("imgs/project/holdlots.PNG");
+        background-size: cover;
+    }
+
+    #yelpcamp{
+        background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/yelpcamp.PNG");
+        background-size: cover;
+    }
+    #yelpcamp:hover{
+        background:url("imgs/project/yelpcamp.PNG");
+        background-size: cover;
+    }
+
+    #randomperson{
+        background:linear-gradient(0deg, rgba(66, 17, 17, 0.7),rgba(66, 17, 17, 0.7)), url("imgs/project/randomperson.PNG");
+        background-size: cover;
+    }
+    #randomperson:hover{
+        background:url("imgs/project/randomperson.PNG");
+        background-size: cover;
+    }
+    #productlanding{
+        background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/productlanding.PNG");
+        background-size: cover;
+    }
+    #productlanding:hover{
+        background:url("imgs/project/productlanding.PNG");
+        background-size: cover;
+    }
+
     .project-photo:hover{
-        border:#b93e51 solid 10px;
+        border:#d1bb7f solid 10px;
     }
     .project-desc{
         min-width: 40%;
@@ -219,7 +273,8 @@ h2{
         font-family: 'Source Code Pro', monospace;
         font-weight: 800;
         margin-right: 30px;
-        color: #b93e51;
+        /* color: #b93e51; */
+        color:rgb(207, 160, 102);
         padding:5px;
         
         
@@ -239,6 +294,9 @@ background-position-y: 50%;
     min-height: 80vh;
     padding-top: 40px;
 
+}
+#contact h2{
+    color: rgb(250, 200, 139);
 }
 
 form{
