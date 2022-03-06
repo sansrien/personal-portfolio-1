@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="imgs/logo.png">
+    
     <title>Clarisse Alago</title>
 </head>
 <body>
@@ -15,23 +20,98 @@
             <li> Contact Me </li>
         </ul>
     </nav> -->
+    
+    <!-- <header id="Header">
+        <img src="imgs/logotransparent.png" alt="" id="header-img">
+        <nav id="navbar">
+            <ul>
+                <li> <a href="#about-me" class="nav-link"> About</a> </li>
+                <li><a href="#projects" class="nav-link"> Projects</a></li>
+                <li><a href="#contact" class="nav-link"> Contact</a> </li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <!-- <header id="change">
+        <div class="container">
+          <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header> -->
+
     <div id="welcome-section" class="main-div">
-        <p>Hello</p>
-        <h1>I'm <strong>Clarisse Alago </strong></h1>
-        <h3>Aspiring <span> Software Engineer </span> </h3>
+        <div class="text-wrapper flex-center text-center">
+            <p>Hello</p>
+            <h1>I'm <strong>Clarisse Alago </strong></h1>
+            <h3>Aspiring <span> Software Engineer </span> </h3>
+        </div>
     </div>
-    <div id="about-me" class="main-div">
+
+
+    <div id="about-me" class="main-div flex-center">
+
+        <div class="content-wrapper">
 
         <img src="imgs/me.png" alt="" id="about-pic">
         <div id="about-text">
             <h2> About Me </h2>
-            <p> I'm currently a graduating electronics engineering student at the University of the Philippines - Diliman who is interested in learning more about web development and software engineering.  In my free time, I sometimes like to bake and learn french. </p>
+            <p>
+                As someone who has always enjoyed logic and math, I fell in love with programming when I took my first programming class. Currently a graduating electronics engineering student at the University of the Philippines - Diliman, I am looking forward to a career in tech and explore my interests in web development and software engineering. When I'm not studying or coding, you may find me reading, baking, or learning french. 
+            </p>
+            <!-- <p> I'm currently a graduating electronics engineering student at the University of the Philippines - Diliman who is interested in learning more about web development and software engineering.  In my free time, I sometimes like to bake and learn french. </p> -->
         </div>
-
+        </div>
             
 
     </div>
-    <div id="skills" class="main-div">
+    <div id="skills" class="main-div flex-center">
+        <h2> Skills </h2>
+        <div class="content-wrapper flex-center text-center">
+        <div class="skill-card">
+            <img src="imgs/python.png" alt="" class="skill-logo">
+            <p>Python</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/html.png" alt="" class="skill-logo">
+            <p>HTML</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/css.png" alt="" class="skill-logo">
+            <p>CSS</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/javascript.png" alt="" class="skill-logo">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/plsql.png" alt="" class="skill-logo">
+            <p>PL/SQL</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/mongo.png" alt="" class="skill-logo">
+            <p>MongoDB</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/nodejs.png" alt="" class="skill-logo">
+            <p>Node.js</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/react.png" alt="" class="skill-logo">
+            <p>React</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/cpp.png" alt="" class="skill-logo">
+            <p>C++</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/git.png" alt="" class="skill-logo">
+            <p>Git</p>
+        </div>
+    </div>
+<!-- 
         <div id="main-skills">
         <ul>
             <li>
@@ -52,17 +132,60 @@
                 <li> SQL </li>
                 <li> MongoDB </li>
             </ul>
-        </div>
+        </div> -->
     </div>
     <div id="projects" class="main-div">
-        <a href="">
-            <div class="project-tile">
-                <img src="" alt="">
-                <h4> React Tinder-Themed Site </h4>
-                <a href="https://github.com/sansrien/tinder-random-person"> Github Repo </a>
+        <h2>Projects</h2>
+        <div class="project-tile">
+           <img src="imgs/project/holdlots.PNG" alt="" class="project-photo">
+            
+            <div class="project-desc">
+                <h4> Hold Lots Tool </h4>
+                <p> Database web application that keeps track of semiconductor lots on hold as a project for Texas Instruments internship. Developed on a webjar that uses spring framework and PL/SQL.</p>
+
             </div>
-        </a>
-        <a href="">
+            
+        </div>
+
+        <div class="project-tile">
+            <a href="https://sansrien-yelpcamp.herokuapp.com/" target="_blank" ><img src="imgs/project/yelpcamp.PNG" class="project-photo" alt=""></a>
+            
+            <div class="project-desc">
+                <h4> Yelp Camp </h4>
+                <p> Full CRUD Project for Web Developer Bootcamp Udemy course using javascript, express, node, and ejs in a MVC architecture. Features data validation, authentication, authorization, and session cookies </p>
+                <a href="https://sansrien-yelpcamp.herokuapp.com/" class="project-link" target="_blank" > Site</a>
+                <a href="https://github.com/sansrien/YelpCamp" class="project-link" target="_blank" > &lt;Code&#47;&gt; </a>
+            </div>
+            
+        </div>
+
+        <div class="project-tile">
+            <a href="https://codepen.io/sansrien/full/xxLOOML"  target="_blank" ><img src="imgs/project/randomperson.PNG" class="project-photo" alt=""></a>
+            
+            <div class="project-desc">
+                <h4> Random Person </h4>
+                <p> Project for GDSC UP Diliman Application using React and Random User Generator API with a tinder-inspired front-end design  </p>
+                <a href="https://sansrien-yelpcamp.herokuapp.com/" class="project-link" target="_blank" > Site</a>
+                <a href="https://github.com/sansrien/tinder-random-person" class="project-link" target="_blank" > &lt;Code&#47;&gt; </a>
+
+            </div>
+            
+        </div>
+
+        <div class="project-tile">
+            <a href="https://sansrien.github.io/landing-page/" target="_blank"  ><img src="imgs/project/productlanding.PNG"  class="project-photo" alt=""></a>
+            
+            <div class="project-desc">
+                <h4> Product Landing Page </h4>
+                <p> A redesigned landing page for Ben's Cookies as a project for FreeCodeCamp's Responsive Web Design done using HTML and vanilla CSS.  </p>
+                <a href="https://sansrien.github.io/landing-page/" class="project-link" target="_blank" > Site </a>
+                <a href="https://github.com/sansrien/landing-page" class="project-link" target="_blank" > &lt;Code&#47;&gt;</a>
+            </div>
+            
+        </div>
+
+
+        <!-- <a href="">
             <div class="project-tile">
                 <img src="" alt="">
                 <h4> Product Landing</h4>
@@ -96,11 +219,39 @@
                 <h4> Random Color Generator</h4>
                 <a href="https://github.com/sansrien/Random-Color-Generator"> Github Repo </a>
             </div>
-        </a>
+        </a> -->
     </div>
-    <div id="contact" class="main-div">
-        <h2> Let's work together</h2>
-        <div class="social">
+    <div id="contact" class="main-div flex-center" >
+        <h2> Get in touch</h2>
+
+        <form action="https://formspree.io/f/mrgjkyno" method="post">
+            <div class="form-q">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" >
+            </div>
+            <div class="form-q">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-q" id="form-message">
+            <label for="message"> Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <button> Send </button>
+    
+
+        </form>
+        <p> or reach me through:</p>
+        <div>
+            <a href="https://www.linkedin.com/in/clarissealago" target="_blank"><img class="logo" src="imgs/linkedin.png" alt="github"></a>
+            <a href="https://github.com/sansrien" target="_blank"><img class="logo" src="imgs/github.png" alt="github"></a>
+            <a href="mailto:clarissealago@gmail.com" target="_blank"><img class="logo" src="imgs/mail.png" alt="github"></a>
+        
+        </div>
+        <footer> Copyright © Clarisse Alago Portfolio 2022 All Rights Reserved</footer>
+        </div>
+        <!-- <div class="social">
             <a href="https://github.com/sansrien" class="contact-link" id="profile-link" target="_blank">
             <img src="" class="social-img" alt="">
             <p> Github </p>
@@ -117,6 +268,9 @@
             <img src="" alt="" "social-img">
             <p> Mail </p>
         </div>
-    </div>
+    </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
