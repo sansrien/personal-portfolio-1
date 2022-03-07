@@ -4,23 +4,286 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarisse Alago</title>
-    <link rel="stylesheet" href="wip.css">
+
     <link rel="icon" href="imgs/logo.png">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="animationextra.css">
+    <!-- <link rel="stylesheet" href="animationextra.css.css"> -->
+    <title>Clarisse Alago</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="typing-demo">
-          Under Construction
+    
+</div>
+    <!-- <nav id="navbar">
+       <a href="#welcome-section"><img src="imgs/logo.png" alt=""></a> 
+        <ul>
+            
+            <li><a href="#about-me" id ="#nav-recolor">About Me</a></li>
+            <li><a href="#projects" >Projects</a></li>  
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav> -->
+    <div id="loader" class="center"></div>
+          <nav id="change">
+            <a href="#welcome-section"><img src="imgs/logo.png" alt=""></a>
+            <ul id="nav-links">
+            
+                <li><a href="#about-me" id ="#nav-recolor">About Me</a></li>
+                <li><a href="#projects" >Projects</a></li>  
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+              <!-- Hello
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a> -->
+          </nav>
+
+
+
+    <div id="welcome-section" class="main-div  ">
+        <div class="text-wrapper flex-center text-center ">
+            <p>Hello</p>
+            <h1 class="animate__animated animate__fadeIn" >I'm <strong>Clarisse Alago </strong></h1>
+            <h3>Aspiring <span> Software Engineer </span> </h3>
+        </div>
+    </div>
+
+
+    <div id="about-me" class="main-div flex-center">
+
+        <div class="content-wrapper">
+
+        <img src="imgs/me.png" alt="" id="about-pic">
+        <div id="about-text">
+            <h2> About Me </h2>
+            <p>
+                As someone who has always enjoyed logic and math, I fell in love with programming when I took my first programming class. Currently a graduating electronics engineering student at the University of the Philippines - Diliman, I am looking forward to a career in tech and explore my interests in web development and software engineering. When I'm not studying or coding, you may find me reading, baking, or learning french. 
+            </p>
+            <!-- <p> I'm currently a graduating electronics engineering student at the University of the Philippines - Diliman who is interested in learning more about web development and software engineering.  In my free time, I sometimes like to bake and learn french. </p> -->
+        </div>
+        </div>
+            
+
+    </div>
+    <div id="skills" class="main-div flex-center">
+        <h2> Skills </h2>
+        <div class="content-wrapper flex-center text-center">
+        <div class="skill-card">
+            <img src="imgs/python.png" alt="" class="skill-logo">
+            <p>Python</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/html.png" alt="" class="skill-logo">
+            <p>HTML</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/css.png" alt="" class="skill-logo">
+            <p>CSS</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/javascript.png" alt="" class="skill-logo">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/plsql.png" alt="" class="skill-logo">
+            <p>PL/SQL</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/mongo.png" alt="" class="skill-logo">
+            <p>MongoDB</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/nodejs.png" alt="" class="skill-logo">
+            <p>Node.js</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/react.png" alt="" class="skill-logo">
+            <p>React</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/cpp.png" alt="" class="skill-logo">
+            <p>C++</p>
+        </div>
+        <div class="skill-card">
+            <img src="imgs/git.png" alt="" class="skill-logo">
+            <p>Git</p>
+        </div>
+    </div>
+<!-- 
+        <div id="main-skills">
+        <ul>
+            <li>
+                Front-end Web Development
+                Back-end Web Development
+                Data Engineering
+                Web Design
+                Graphic Design
+            </li>
+        </ul>
+        </div>
+        <div id="languages">
+            <ul>
+                <li> Python </li>
+                <li> HTML </li>
+                <li> CSS </li>
+                <li> JavaScript </li>
+                <li> SQL </li>
+                <li> MongoDB </li>
+            </ul>
+        </div> -->
+    </div>
+    <div id="projects" class="main-div">
+        <h2>Projects</h2>
+        <div class="project-tile">
+            <div class="project-pic" id="holdlots"></div>
+           <!-- <img src="imgs/project/holdlots.PNG" alt="" class="project-photo"> -->
+            
+            <div class="project-desc">
+                <h4> Hold Lots Tool </h4>
+                <p> Database web application that keeps track of semiconductor lots on hold as a project for Texas Instruments internship. Developed on a webjar that uses spring framework and PL/SQL.</p>
+
+            </div>
+            
         </div>
 
-    <p> In the meantime, you may checkout my profiles on: </p>
-    <div>
-        <a href="https://www.linkedin.com/in/clarissealago" target="_blank"><img class="logo" src="imgs/linkedin1.png" alt="github"></a>
-        <a href="https://github.com/sansrien" target="_blank"><img class="logo" src="imgs/github1.png" alt="github"></a>
-    </div>
-    </div>
+        <div class="project-tile">
+            <a href="https://sansrien-yelpcamp.herokuapp.com/" target="_blank" >
+                <div class="project-pic" id="yelpcamp"></div>
+                <!-- <img src="imgs/project/yelpcamp.PNG" class="project-photo" alt="">-->
+            </a> 
+            
+            <div class="project-desc">
+                <h4> Yelp Camp </h4>
+                <p> Full CRUD Project for Web Developer Bootcamp Udemy course using javascript, express, node, and ejs in a MVC architecture. Features data validation, authentication, authorization, and session cookies </p>
+                <a href="https://sansrien-yelpcamp.herokuapp.com/" class="project-link" target="_blank" > Site</a>
+                <a href="https://github.com/sansrien/YelpCamp" class="project-link" target="_blank" > &lt;Code&#47;&gt; </a>
+            </div>
+            
+        </div>
 
+        <div class="project-tile">
+            <a href="https://codepen.io/sansrien/full/xxLOOML"  target="_blank" >
+                <div class="project-pic" id="randomperson"></div>
+                <!-- <img src="imgs/project/randomperson.PNG" class="project-photo" alt=""> -->
+            </a>
+            
+            <div class="project-desc">
+                <h4> Random Person </h4>
+                <p> Project for GDSC UP Diliman Application using React and Random User Generator API with a tinder-inspired front-end design  </p>
+                <a href="https://sansrien-yelpcamp.herokuapp.com/" class="project-link" target="_blank" > Site</a>
+                <a href="https://github.com/sansrien/tinder-random-person" class="project-link" target="_blank" > &lt;Code&#47;&gt; </a>
+
+            </div>
+            
+        </div>
+
+        <div class="project-tile">
+            <a href="https://sansrien.github.io/landing-page/" target="_blank"  >
+                <div class="project-pic" id="productlanding"></div>
+                </a>
+                <!-- <img src="imgs/project/productlanding.PNG"  class="project-photo" alt=""></a> -->
+            
+            <div class="project-desc">
+                <h4> Product Landing Page </h4>
+                <p> A redesigned landing page for Ben's Cookies as a project for FreeCodeCamp's Responsive Web Design done using HTML and vanilla CSS.  </p>
+                <a href="https://sansrien.github.io/landing-page/" class="project-link" target="_blank" > Site </a>
+                <a href="https://github.com/sansrien/landing-page" class="project-link" target="_blank" > &lt;Code&#47;&gt;</a>
+            </div>
+            
+        </div>
+
+
+        <!-- <a href="">
+            <div class="project-tile">
+                <img src="" alt="">
+                <h4> Product Landing</h4>
+                <a href="https://github.com/sansrien/landing-page"> Github Repo </a>
+            </div>
+        </a>
+        <a href="">
+            <div class="project-tile">
+                <img src="" alt="">
+                <h4> Survey Form</h4>
+                <a href="https://github.com/sansrien/survey-form"> Github Repo </a>
+            </div>
+        </a>
+        <a href="">
+            <div class="project-tile">
+                <img src="" alt="">
+                <h4> Tribute Page </h4>
+                <a href="https://github.com/sansrien/ada-lovelace-tribute"> Github Repo </a>
+            </div>
+        </a>
+        <a href="">
+            <div class="project-tile">
+                <img src="" alt="">
+                <h4> React Counter</h4>
+                <a href="https://github.com/sansrien/react-counter"> Github Repo </a>
+            </div>
+        </a>
+        <a href="https://sansrien.github.io/Random-Color-Generator/">
+            <div class="project-tile">
+                <img src="" alt="">
+                <h4> Random Color Generator</h4>
+                <a href="https://github.com/sansrien/Random-Color-Generator"> Github Repo </a>
+            </div>
+        </a> -->
+    </div>
+    <div id="contact" class="main-div flex-center" >
+        <h2> Get in touch</h2>
+
+        <form action="https://formspree.io/f/mrgjkyno" method="post">
+            <div class="form-q">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" >
+            </div>
+            <div class="form-q">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-q" id="form-message">
+            <label for="message"> Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <button> Send </button>
     
+
+        </form>
+        <p> or reach me through:</p>
+        <div>
+            <a href="https://www.linkedin.com/in/clarissealago" target="_blank"><img class="logo" src="imgs/linkedin.png" alt="github"></a>
+            <a href="https://github.com/sansrien" target="_blank"><img class="logo" src="imgs/github.png" alt="github"></a>
+            <a href="mailto:clarissealago@gmail.com" target="_blank"><img class="logo" src="imgs/mail.png" alt="github"></a>
+        
+        </div>
+        <footer> Copyright © Clarisse Alago Portfolio 2022 All Rights Reserved</footer>
+        </div>
+        <!-- <div class="social">
+            <a href="https://github.com/sansrien" class="contact-link" id="profile-link" target="_blank">
+            <img src="" class="social-img" alt="">
+            <p> Github </p>
+            </a>
+        </div>
+        <div class="social">
+            <a href="" class="contact-link">
+            <img src="" alt="" "social-img">
+            <p> LinkedIn </p>
+            </a>
+        </div>
+        <div class="social">
+            <a href="" class="contact-link"></a>
+            <img src="" alt="" "social-img">
+            <p> Mail </p>
+        </div>
+    </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
 </body>
 </html>

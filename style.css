@@ -27,6 +27,29 @@ body{
 img{
     max-width: 100%;
 }
+#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 /* #header{
     display: flex;
     height: 90px;
@@ -80,7 +103,7 @@ img{
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     max-height: 30px;
     padding-top: 20px;
     display: flex;
@@ -157,11 +180,17 @@ h2{
 }
 
 
+
+
+
+
 #about-me{
     background-color:#53151f;
     color: white;
     min-height: 70vh;
     padding:20px;
+    margin-bottom: 0;
+    border: #53151f solid 10px;
 
 }
     #about-me .content-wrapper{
@@ -176,9 +205,8 @@ h2{
         color: rgb(250, 200, 139);
     }
     #about-pic{
-        width: 20%;
-        min-width: 300px;
-        max-height: auto;
+        width: 300px;
+        height: 351px;
         margin-right: 5%;
         margin-top: 20px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -195,10 +223,13 @@ h2{
 
 #skills{
     background-color: rgb(15, 15, 15);
+    margin-top: 0;
     justify-content: start;
     color: white;
     padding-top: 100px;
-    min-height: 90vh;
+    max-height: 100vh;
+    min-height: 0;
+    padding-bottom: 15vh;
     
 }
     #skills .content-wrapper{
@@ -206,10 +237,12 @@ h2{
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0 20vh;
+        max-height: 80vh;
     }
     .skill-card{
         max-width:120px;
         margin: 2vw;
+        flex-shrink: 5;
     }
     .skill-logo{
         filter: sepia(100);
@@ -239,6 +272,7 @@ h2{
         max-width: 1100px;
         margin: 20px;
         margin-bottom: 40px;
+        flex-wrap: wrap;
     }
 
     .project-photo{
@@ -256,6 +290,7 @@ h2{
     .project-pic:hover{
         min-width: 450px;
         min-height:253px;
+        flex-shrink: 2;
     }
     #holdlots{
         background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/holdlots.PNG");
@@ -285,18 +320,23 @@ h2{
     }
     #productlanding{
         background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/productlanding.PNG");
-        background-size: cover;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     #productlanding:hover{
         background:url("imgs/project/productlanding.PNG");
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .project-photo:hover{
         border:#d1bb7f solid 10px;
     }
     .project-desc{
-        min-width: 40%;
+        max-width: 50%;
+        min-width: 20%;
     }
     .project-link{
         text-decoration: none;
@@ -316,7 +356,7 @@ h2{
 
 #contact{
     background:linear-gradient(0deg, rgba(66, 17, 17, 0.9), rgba(66, 17, 17, 0.9)), url("imgs/bg1.jpg");
-background-position-y: 50%;
+    background-position-y: 50%;
     background-size: 2000px;
     background-repeat: no-repeat;
     color:white;
@@ -333,7 +373,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly ;
-    width:500px;
+    width:700px;
 }
 .form-q{
     display: flex;
@@ -388,3 +428,84 @@ button:hover{
 
 
   }
+@media screen and (max-width:1200px) {
+    #skills .content-wrapper{
+        padding: 0;
+    }
+    .skill-card{
+        max-width:100px;
+        
+    
+    }
+    .skill-card:hover{
+        max-width:110px;
+    }
+}
+@media screen and (max-width: 950px) {
+
+    .project-pic{
+        min-width:250px !important; 
+        margin-right: 20px;
+    }
+    form{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-tile{
+        align-self: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .project-photo{
+        min-height:140px !important;
+    }
+    .project-desc{
+        max-width: 95vw !important;
+    }
+    #about-text{
+        text-align: center;
+        width:90%;
+        line-height: 120%;
+    }
+    #about-text p{
+        font-size: 0.93em;
+        text-align: justify;
+    }
+    #about-pic{
+        max-width: 200px !important;
+        max-height: 234px !important;
+    }  
+}
+@media screen and (max-width:650px) {
+    #skills .content-wrapper{
+        padding: 0;
+    }
+    .skill-card{
+        max-width:65px;
+    }
+    .skill-card:hover{
+        max-width:100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.8em;
+    }
+
+    #welcome-section h3{
+        font-size: 1em;
+    }
+    #hello{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 2em;
+    }
+}
