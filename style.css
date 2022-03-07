@@ -180,9 +180,8 @@ h2{
         color: rgb(250, 200, 139);
     }
     #about-pic{
-        width: 20%;
-        min-width: 300px;
-        max-height: auto;
+        width: 300px;
+        height: 351px;
         margin-right: 5%;
         margin-top: 20px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -398,7 +397,6 @@ button:hover{
 @media screen and (max-width: 950px) {
 
     .project-pic{
-        border: cyan solid 10px;
         min-width:250px !important; 
         margin-right: 20px;
     }
@@ -421,6 +419,14 @@ button:hover{
     .project-desc{
         max-width: 95vw !important;
     }
+    #about-text{
+        text-align: center;
+        width:90%;
+    }
+    #about-pic{
+        max-width: 200px !important;
+        max-height: 234px !important;
+    }  
 }
 
 @media screen and (max-width: 600px) {
@@ -433,5 +439,8 @@ button:hover{
     }
     #hello{
         font-size: 1em;
+    }
+    h2{
+        font-size: 2em;
     }
 }
