@@ -39,7 +39,7 @@ $(document).scroll(function() {
     $('nav img').css('filter', 'none');
   }else if (scrollPos >= top1 && scrollPos < top2) {
     $('#change a').css('color', 'white');
-    $('nav img').css('filter', 'sepia(100)');
+    $('nav img').css('filter', 'invert(100) sepia(100)');
   } else if (scrollPos >= top2 && scrollPos < top3) {
     $('#change a').css('color', 'white');
     $('nav img').css('filter', 'none');
