@@ -291,7 +291,7 @@ h2{
     }
     #productlanding{
         background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/productlanding.PNG");
-        background-size: cover;
+        background-size: fill;
     }
     #productlanding:hover{
         background:url("imgs/project/productlanding.PNG");
@@ -420,5 +420,18 @@ button:hover{
     }
     .project-desc{
         max-width: 95vw !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.8em;
+    }
+
+    #welcome-section h3{
+        font-size: 1em;
+    }
+    #hello{
+        font-size: 1em;
     }
 }
