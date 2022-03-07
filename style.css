@@ -80,7 +80,7 @@ img{
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     max-height: 30px;
     padding-top: 20px;
     display: flex;
@@ -201,7 +201,9 @@ h2{
     justify-content: start;
     color: white;
     padding-top: 100px;
-    min-height: 90vh;
+    max-height: 100vh;
+    min-height: 0;
+    padding-bottom: 15vh;
     
 }
     #skills .content-wrapper{
@@ -209,10 +211,12 @@ h2{
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0 20vh;
+        max-height: 80vh;
     }
     .skill-card{
         max-width:120px;
         margin: 2vw;
+        flex-shrink: 5;
     }
     .skill-logo{
         filter: sepia(100);
@@ -339,7 +343,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly ;
-    width:500px;
+    max-width:500px;
 }
 .form-q{
     display: flex;
@@ -394,6 +398,16 @@ button:hover{
 
 
   }
+@media screen and (max-width:1200px) {
+    #skills .content-wrapper{
+        padding: 0;
+    }
+    .skill-card{
+        max-width:100px;
+        
+    
+    }
+}
 @media screen and (max-width: 950px) {
 
     .project-pic{
@@ -433,7 +447,16 @@ button:hover{
         max-height: 234px !important;
     }  
 }
-
+@media screen and (max-width:650px) {
+    #skills .content-wrapper{
+        padding: 0;
+    }
+    .skill-card{
+        max-width:65px;
+        
+    
+    }
+}
 @media screen and (max-width: 600px) {
     h1{
         font-size: 1.8em;

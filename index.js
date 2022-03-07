@@ -33,7 +33,7 @@ var top2 = $('#skills').offset().top;
 var top3 = $('#projects').offset().top;
 
 $(document).ready(function(){
-  if($(window).width() < 550){
+  if($(window).width() < 550 || $(document).width() < 550  ){
     $('#nav-links').hide();
   }
   $(document).scroll(function() {
