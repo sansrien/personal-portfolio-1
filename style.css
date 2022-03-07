@@ -159,6 +159,8 @@ h2{
 
 
 
+
+
 #about-me{
     background-color:#53151f;
     color: white;
@@ -241,6 +243,7 @@ h2{
         max-width: 1100px;
         margin: 20px;
         margin-bottom: 40px;
+        flex-wrap: wrap;
     }
 
     .project-photo{
@@ -258,6 +261,7 @@ h2{
     .project-pic:hover{
         min-width: 450px;
         min-height:253px;
+        flex-shrink: 2;
     }
     #holdlots{
         background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/holdlots.PNG");
@@ -298,7 +302,8 @@ h2{
         border:#d1bb7f solid 10px;
     }
     .project-desc{
-        min-width: 40%;
+        max-width: 50%;
+        min-width: 20%;
     }
     .project-link{
         text-decoration: none;
@@ -390,3 +395,12 @@ button:hover{
 
 
   }
+@media screen and (max-width: 950px) {
+
+    .project-pic{
+        border: cyan solid 10px;
+        min-width:250px !important; 
+        min-height:140px;
+        margin-right: 20px;
+    }
+}
