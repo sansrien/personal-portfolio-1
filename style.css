@@ -166,6 +166,8 @@ h2{
     color: white;
     min-height: 70vh;
     padding:20px;
+    margin-bottom: 0;
+    border: #53151f solid 10px;
 
 }
     #about-me .content-wrapper{
@@ -198,6 +200,7 @@ h2{
 
 #skills{
     background-color: rgb(15, 15, 15);
+    margin-top: 0;
     justify-content: start;
     color: white;
     padding-top: 100px;
@@ -294,11 +297,15 @@ h2{
     }
     #productlanding{
         background:linear-gradient(0deg, rgba(66, 17, 17, 0.35),rgba(66, 17, 17, 0.35)), url("imgs/project/productlanding.PNG");
-        background-size: fill;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     #productlanding:hover{
         background:url("imgs/project/productlanding.PNG");
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .project-photo:hover{
@@ -326,7 +333,7 @@ h2{
 
 #contact{
     background:linear-gradient(0deg, rgba(66, 17, 17, 0.9), rgba(66, 17, 17, 0.9)), url("imgs/bg1.jpg");
-background-position-y: 50%;
+    background-position-y: 50%;
     background-size: 2000px;
     background-repeat: no-repeat;
     color:white;
@@ -343,7 +350,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly ;
-    max-width:500px;
+    width:700px;
 }
 .form-q{
     display: flex;
@@ -407,12 +414,18 @@ button:hover{
         
     
     }
+    .skill-card:hover{
+        max-width:110px;
+    }
 }
 @media screen and (max-width: 950px) {
 
     .project-pic{
         min-width:250px !important; 
         margin-right: 20px;
+    }
+    form{
+        width: 300px;
     }
 }
 
@@ -453,8 +466,9 @@ button:hover{
     }
     .skill-card{
         max-width:65px;
-        
-    
+    }
+    .skill-card:hover{
+        max-width:100px;
     }
 }
 @media screen and (max-width: 600px) {
