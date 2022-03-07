@@ -5,11 +5,11 @@ var top2 = $('#skills').offset().top;
 var top3 = $('#projects').offset().top;
 
 $(document).ready(function(){
-  // // if($(window).width() < 550 || $(document).width() < 550  ){
-  // //   $('#nav-links').hide();
-  // // }else{
-  // //   $('#nav-links').unhide();
-  // // }
+  if($(window).width() < 550 || $(document).width() < 550  ){
+    $('#nav-links').hide();
+  }else{
+    $('#nav-links').unhide();
+  }
 
   $(document).scroll(function() {
     var scrollPos = $(document).scrollTop();
