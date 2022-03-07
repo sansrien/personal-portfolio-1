@@ -422,6 +422,11 @@ button:hover{
     #about-text{
         text-align: center;
         width:90%;
+        line-height: 120%;
+    }
+    #about-text p{
+        font-size: 0.93em;
+        text-align: justify;
     }
     #about-pic{
         max-width: 200px !important;
