@@ -34,7 +34,7 @@ var top3 = $('#projects').offset().top;
 
 $(document).ready(function(){
   if($(window).width() < 550){
-    $('#nav-link').hide();
+    $('#nav-links').hide();
   }
   $(document).scroll(function() {
     var scrollPos = $(document).scrollTop();
