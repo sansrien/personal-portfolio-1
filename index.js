@@ -34,6 +34,7 @@ $(document).ready(function(){
       $('nav img').css('filter', 'none');
     } else if (scrollPos >= top3 && scrollPos < top4) {
         $('#change a').css('color', '#53151f');
+        $('nav img').css('filter', 'none');
      }else if (scrollPos >= top4) {
         $('#change a').css('color', 'white');
         $('nav img').css('filter', 'invert(100) sepia(100)');
