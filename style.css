@@ -27,6 +27,11 @@ body{
 img{
     max-width: 100%;
 }
+#loader-container{
+    width: 100vw;
+    height:100vh;
+    background-color: white;
+}
 #loader {
     border: 12px solid #f3f3f3;
     border-radius: 50%;
