@@ -9,12 +9,16 @@
     
     <link rel="stylesheet" href="style.css">
     
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="animationextra.css">
-    <!-- <link rel="stylesheet" href="animationextra.css.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-observe-visibility/dist/vue-observe-visibility.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <title>Clarisse Alago</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .visible { visibility: visible; }
+        .invisible { visibility: hidden; }
+    </style>
 </head>
 <body>
     
@@ -38,8 +42,10 @@
     <div id="welcome-section" class="main-div  ">
         <div class="text-wrapper flex-center text-center ">
             <p>Hello</p>
+            <div  v-observe-visibility="{ callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'a') }" :class="{ 'visible animated fadeIn': showAnimationFor.a, 'invisible': !showAnimationFor.a }">
             <h1 class="animate__animated animate__fadeIn" >I'm <strong>Clarisse Alago </strong></h1>
             <h3>Aspiring <span> Software Engineer </span> </h3>
+        </div>
         </div>
         <a href="#about-me" id="arrow"><span id="span-arrow"></span></a> 
     </div>
@@ -199,9 +205,10 @@
         </div>
         <footer> Copyright © Clarisse Alago Portfolio 2022 All Rights Reserved</footer>
         </div>
-       
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="animation.js"></script>
 
 </body>
 </html>

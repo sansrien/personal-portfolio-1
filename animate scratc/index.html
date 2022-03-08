@@ -1,21 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+        <head>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script src="https://unpkg.com/vue-observe-visibility/dist/vue-observe-visibility.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        </head>
 
-</head>
-<body>
-    <div class="square-wrapper">
-        <div class="square"></div>
-    <script src="index.js"></script>
-</body>
+
+    <body>
+        <div id="demo2">
+            <div v-observe-visibility="{ callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'a') }" :class="{ 'visible animated bounce': showAnimationFor.a, 'invisible': !showAnimationFor.a }">
+                Can you see this animation part 2?
+            </div>
+
+            <div v-observe-visibility="{ callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'b') }" :class="{ 'visible animated slideInLeft': showAnimationFor.b, 'invisible': !showAnimationFor.b }">
+                Can you see this animation part 3?
+            </div>
+        </div>
+
+        <script>
+            var demo = new Vue({
+                el: '#demo2',
+                data: {
+                    showAnimationFor: {
+                        a: false,
+                        b: false,
+                        c: false,
+                    }
+                },
+                methods: {
+                    isViewableNow(isVisible, entry, section) {
+                        this.showAnimationFor[section] = isVisible;
+                    }
+                }
+            });
+        </script>
+    </body>
 </html>
