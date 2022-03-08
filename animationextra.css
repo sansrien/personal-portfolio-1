@@ -6,8 +6,8 @@
     -webkit-animation-duration: 0.8s;
 }
 #contact .fadeIn{
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay: 0.5s;
 }
 #skills .fadeIn{
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay:0.5s;
 }
