@@ -178,6 +178,27 @@ h2{
     font-size: 3em;
     font-weight:600 ;
 }
+    #arrow{
+        margin-top: 85vh;
+        color:white;
+        position: absolute;
+    }
+
+    #span-arrow {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 3px solid rgb(68, 24, 24);
+        border-bottom: 3px solid rgb(51, 13, 13);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        box-sizing: border-box;
+        box-shadow: rgba(204, 204, 204, 0.644) 0px 4px 12px;
+    }
+    #arrow:hover{
+        margin-top: 84.5vh;
+    }
 
 
 
@@ -209,7 +230,7 @@ h2{
         height: 351px;
         margin-right: 5%;
         margin-top: 20px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         filter: brightness(150%) grayscale(100) contrast(110%);
     }
     #about-pic:hover{
@@ -386,7 +407,9 @@ label{
 input{
     height:2.5em;
 }
-
+.on-focus:focus{
+    outline-color:rgb(194, 126, 42);
+}
 button{
     margin-top: 28px;
     width: 100px;
