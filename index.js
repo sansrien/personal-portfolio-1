@@ -28,7 +28,7 @@ $(document).ready(function(){
       $('nav img').css('filter', 'none');
     } else if (scrollPos >= top3 && scrollPos < top4) {
         $('#change a').css('color', 'rgb(194, 126, 42)');
-        $('nav img').css('filter', 'invert(100) sepia(100)');
+        $('nav img').css('filter', 'none');
      }else if (scrollPos >= top4) {
         $('#change a').css('color', 'rgb(194, 126, 42)');
         $('nav img').css('filter', 'invert(100) sepia(100)');
