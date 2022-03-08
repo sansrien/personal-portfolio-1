@@ -1,4 +1,10 @@
-.animate__animated.animate__fadeIn{
-    --animation-duration:10;
-    --animation-delay:10s;
+.fadeInLeft{
+    -webkit-animation-duration: 0.8s;
+}
+
+.fadeInRight{
+    -webkit-animation-duration: 0.8s;
+}
+#contact .fadeIn{
+    -webkit-animation-delay: 0.5s;
 }
