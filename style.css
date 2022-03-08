@@ -50,55 +50,7 @@ img{
     right: 0;
     margin: auto;
 }
-/* #header{
-    display: flex;
-    height: 90px;
-    margin:0;
-    justify-content: space-between;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-    transition: 0.3s ease-in-out;
-}
 
-#header-img{
-    height:80%;
-    width:auto;
-    margin-left: 4vw;
-    position: sticky;
-    
-}
-
-#navbar{
-    margin-right: 5vw;
-    position: inherit;
-}
-#navbar ul{
-     display: flex;
-     list-style-type: none;
-     list-style-type: none;
-     font-weight: 1.2em;
- }
- #navbar li{
-     margin: 2vw;
- }
- #navbar a{
-     color: #983443;
-     text-decoration: none;
-     font-weight: 500;
-     font-size: 1.2em;
- }
- #navbar a:hover{
-    border-bottom: white 5px solid;
-} */
- /* .nav-active{
-     background-color: #d8262f;
- }
- .img-active{
-     filter: brightness(100);
- } */ 
 
 nav {
     position: fixed;
