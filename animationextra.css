@@ -1,7 +1,10 @@
 .fadeInLeft{
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.8s;
 }
 
 .fadeInRight{
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.8s;
+}
+#contact .fadeIn{
+    -webkit-animation-delay: 1s;
 }

@@ -42,8 +42,38 @@ var animateMe2 = new Vue({
     }
 });
 
-var animateMe3  = new Vue({
+var animateSkills  = new Vue({
     el: '#skills',
+    data: {
+        showAnimation: false,
+    },
+    methods: {
+        isViewableNow(isVisible, entry) {
+            this.showAnimation = isVisible;
+        }
+    }
+});
+
+var animateProject= new Vue({
+    el: '#projects',
+    data: {
+        showAnimationFor: {
+            a: false,
+            b: false,
+            c: false,
+            d: false
+        }
+    },
+    methods: {
+        isViewableNow(isVisible, entry, section) {
+            this.showAnimationFor[section] = isVisible;
+        }
+    }
+});
+
+
+var animateContact  = new Vue({
+    el: '#contact',
     data: {
         showAnimation: false,
     },
