@@ -16,6 +16,7 @@ var top0 = $('#welcome-section').offset().top;
 var top1 = $('#about-me').offset().top;
 var top2 = $('#skills').offset().top;
 var top3 = $('#projects').offset().top;
+var top4 = $('#contact').offset().top;
 
 
 $(document).ready(function(){
@@ -31,8 +32,11 @@ $(document).ready(function(){
     } else if (scrollPos >= top2 && scrollPos < top3) {
       $('#change a').css('color', 'white');
       $('nav img').css('filter', 'none');
-    } else if (scrollPos >= top3) {
-      $('#change a').css('color', '#53151f');
+    } else if (scrollPos >= top3 && scrollPos < top4) {
+        $('#change a').css('color', '#53151f');
+     }else if (scrollPos >= top4) {
+        $('#change a').css('color', 'white');
+        $('nav img').css('filter', 'invert(100) sepia(100)');
     }
   });
 
