@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-observe-visibility/dist/vue-observe-visibility.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+    <link rel="stylesheet" href="animationextra.css">
     <title>Clarisse Alago</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="loader.js"></script>
@@ -57,8 +57,8 @@
 
         <div class="content-wrapper">
 
-        <img src="imgs/me.png" alt="" id="about-pic">
-        <div id="about-text">
+        <img src="imgs/me.png" alt="" id="about-pic" v-observe-visibility="{ callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'a'), once:true }" :class="{ 'visible animated fadeInLeft': showAnimationFor.a, 'invisible': !showAnimationFor.a }">
+        <div id="about-text" v-observe-visibility="{ callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'a'), once:true }" :class="{ 'visible animated fadeInRight': showAnimationFor.a, 'invisible': !showAnimationFor.a }">
             <h2> About Me </h2>
             <p>
                 As someone who has always enjoyed logic and math, I fell in love with programming when I took my first programming class. Currently a graduating electronics engineering student at the University of the Philippines - Diliman, I am looking forward to a career in tech and explore my interests in web development and software engineering. When I'm not studying or coding, you may find me reading, baking, or learning french. 
@@ -70,7 +70,7 @@
     </div>
     <div id="skills" class="main-div flex-center">
         <h2> Skills </h2>
-        <div class="content-wrapper flex-center text-center">
+        <div class="content-wrapper flex-center text-center" v-observe-visibility="{ callback: isViewableNow, once: true }" :class="{ 'visible animated slideInRight': showAnimation, 'invisible': !showAnimation }">
         <div class="skill-card">
             <img src="imgs/python.png" alt="" class="skill-logo">
             <p>Python</p>
