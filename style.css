@@ -27,6 +27,9 @@ body{
 img{
     max-width: 100%;
 }
+strong{
+    color: #983443;
+}
 #loader-container{
     width: 100vw;
     height:100vh;
